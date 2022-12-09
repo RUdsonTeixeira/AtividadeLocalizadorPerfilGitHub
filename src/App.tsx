@@ -22,6 +22,11 @@ function App() {
         setBio(res.data.bio);
         setAvatarURL(res.data.avatar_url);
       })
+      .catch((err) => {
+        setName("Perfil não foi encontrado");
+        setAvatarURL("https://www.informatique-mania.com/wp-content/uploads/2021/02/guest.png")
+        setBio("")
+      });
   };
 
   return (
