@@ -1,3 +1,5 @@
+import axios from 'axios'
+import "./App.css";
 function App() {
   return(
     <div className="container-app">
@@ -10,7 +12,6 @@ function App() {
 
         <main>
           <div className="form">
-            <h1>Buscador Teste</h1>
             <input type="text" placeholder="Digite o nome de usuario"/>
             <button>Buscar</button>
           </div>
